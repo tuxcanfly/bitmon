@@ -2,12 +2,31 @@
 <html>
   <head>
     <title>Bitcoin wallet details</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <script src="jquery.js"></script>
     <script src="config.js"></script>
     <script src="bundle.js"></script>
     <script src="popup.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
-      <h1><span class="balance"></span> BTC</h1>
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>BTC</th>
+                  <th>USD</th>
+                  <th>INR</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="btc">3</td>
+                  <td class="usd">250</td>
+                  <td class="inr">22500</td>
+              </tr>
+          </tbody>
+      </table>
   </body>
 </html>
