@@ -11,5 +11,8 @@
     }
     var balance = ret.result;
     chrome.browserAction.setBadgeText({'text': String(balance)});
+    $("td.btc").text(balance);
+    $("td.usd").text(balance * 447);
+    $("td.inr").text(balance * 447 * 60);
   });
 })();
