@@ -3,7 +3,7 @@
   var RpcClient = bitcore.RpcClient;
   var rpc = new RpcClient(Config.rpc);
 
-  rpc.getBalance('', function(err, ret) {
+  rpc.getBalance(function(err, ret) {
     if (err) {
       console.error('error occured');
       console.error(err);
