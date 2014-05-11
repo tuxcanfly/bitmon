@@ -9,8 +9,7 @@
       console.error(err);
       return;
     }
-    console.log(ret);
-    var bal = document.querySelectorAll('span.balance');
-    bal.text = ret.result;
+    var balance = ret.result;
+    chrome.browserAction.setBadgeText({'text': String(balance)});
   });
 })();
